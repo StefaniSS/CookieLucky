@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    height: 100vh; 
+    background: linear-gradient(to top right, #190361, #BB00FF);
+    display: grid;
+    place-items: center;
+}
+
+.hide{
+    display: none;
+}
+
+h1, p {
+    font-family: "Source Sans 3", sans-serif;
+    font-style: normal;
+}
+
+h1{
+    font-size: 2.5rem;
+}
+
+p{
+    font-size: 1.6rem;
+}
+
+form {
+    margin-top: 4rem;
+}
+
+.cookie{
+    background-color: #FFFFFF;
+    box-shadow: 0px .2rem .4rem rgba(0, 0, 0, 0.1);
+    height: 42.4rem;
+    width: 42.8rem;
+    padding: 5rem 6rem 5rem 6rem;
+    text-align: center;
+    place-items: center;
+    border-radius: 0.5rem;
+    overflow: hidden;
+
+} 
+
+.cookie input {
+
+    width:30rem ;
+    height: 20rem;
+    padding: auto;
+
+    transition: transform 0.1s;
+}
+
+.cookie input:hover {
+    animation: shake 0.5s; 
+    animation-iteration-count: infinite; 
+}
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
+    20%, 40%, 60%, 80% { transform: translateX(10px); }
+}
+
+
+.cookieOpen {
+    background-color: #FFFFFF;
+    box-shadow: 0px .2rem .4rem rgba(0, 0, 0, 0.1);
+    height: 56.4rem;
+    width: 42.8rem;
+    text-align: center;
+    place-items: center;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    padding: 4.8rem 6.4rem 6.4rem;
+    
+}
+
+.cookieOpen img {
+    width:30rem ;
+    height: 20rem;
+}
+
+
+#lucky {
+    width: 29.3rem;
+    height: 10.7rem;
+    background-color: #E4EDF1;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Grey Qo", cursive;
+    font-size: 2rem;
+    font-style: normal;
+    padding: 1rem;
+    box-sizing: border-box;
+    
+    animation: riseUp 2s ease-out;
+}
+
+@keyframes riseUp {
+    0% {
+        transform: scale(0.1) translateY(100%);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1) translateY(0);
+    }
+}
+
+button {
+    border-radius: .4rem;
+    background-color: #FF9500;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    width: 17.4rem;
+    height: 5.2rem;
+
+    transition: background .3s;
+}
+
+button:hover{
+background-color:#d18d2d ;
+}
+
